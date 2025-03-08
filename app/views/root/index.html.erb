@@ -13,9 +13,9 @@ document.querySelector(".send-email").onsubmit = function(e) {
     }
   }).then(function(response) {
     if (response.ok) {
-      window.open('/mail', '_blank')
+      window.open('/mail', '_blank') // ok? open hostname/mail (get)
     } else {
-      console.error(response)
+      console.error(response) // log to browser's js console
     }
   });
 }
